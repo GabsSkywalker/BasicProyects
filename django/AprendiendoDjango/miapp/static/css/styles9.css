@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif,Arial, Helvetica;
+    text-decoration: none;
+}
+body{
+    background-color:  lightgray;
+}
+
+header{
+    width: 1190px;
+    height: 124px;
+    margin: auto;
+    background-color: darkslategray;
+}
+#logotipo{
+    width: 42%;
+    height: 140px;
+    margin: 0 auto;
+}
+
+#logotipo img{
+    display: block;
+    float: left;
+    width: 47px;
+    margin-top: 38px;
+}
+
+#logotipo h1{
+    float:left;
+    display: block;
+    margin-top: 10%;
+    margin-left: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #3aab7e;
+}
+
+nav{
+    width: 1254px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #2f4f4f;
+    border: 1px solid #213838;
+    box-shadow: 0px 22px 22px grey;
+    
+}
+
+nav ul li{
+    line-height: 40px;
+    float: left;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: whitesmoke;
+    
+
+
+}
+
+nav ul li a:hover{
+    background-color:lightgray ;
+    box-shadow: 0px 0px 0px; 
+}
+
+.barra{
+    width: 1254px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+.esquina-izquierda{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #213838;
+    float: left;
+}
+
+.esquina-derecha{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #213838;
+    float: right;
+}
+
+.relleno{
+    display: block;
+    width: 96.811%;
+    height: 10px;
+    background-color: #213838;
+    float: left;
+}
+
+#content{
+    width: 1190px;
+    min-height: 930px;
+    margin: 0 auto;
+    margin-top: 63px;
+    margin-bottom: 30px;
+}
+
+.Box{
+    background-color: azure;
+    width: 90%;
+    min-height: 930px;
+    padding: 20px;
+    border: solid 1px #ddd;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.Title{ 
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+footer{
+    width: 1190px;
+    background-color:#2f4f4f ;
+    border: #444;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+}
+#listado{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline purple 3px;
+}
+
+.box ul, .box ol{
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+ 
+#lenguaje{
+    padding: 5px;
+    margin-left: 40px;
+    list-style: decimal;
+}

@@ -1,0 +1,61 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles9.css' %}">
+    
+    
+    <title>
+        {%block title%}
+        ~ Django Dans
+        {%endblock%}
+        
+    </title>
+</head>
+
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="{%static 'imagenes/logo.png'%}"/>
+            <h1>Sitio Web con Django</h1>    
+        </div>  
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'inicio' %}">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'pagina' %}">pagina</a>
+            </li>
+            <li>
+                <a href="{% url 'hola_mundo' %}">hola mundo</a>
+            </li>
+            <li>
+                <a href="{% url 'contacto' nombre='Dans' apellido='Cheese' %}">contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="barra">
+        <span class="esquina-izquierda"></span>
+        <span class="relleno"></span>        
+        <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+        <div class="Box">
+            {%block content%}
+            <h2 class="Title">Titulo De Prueba</h2>
+            {%endblock%}
+        </div>
+    </div>
+    
+    <footer>Creado en python por Dans &copy; {% now "d-m-Y h:m" %}</footer>
+    <hr/>
+</body>
+
+</html>

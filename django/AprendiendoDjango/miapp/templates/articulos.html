@@ -1,0 +1,22 @@
+{%extends 'layout.html'%}
+
+{%block title%}
+
+Hola Mundo
+{{ block.super }}
+{%endblock%}
+{%block content%}
+<h1 class=Title>
+    Listado De Articulos   
+</h1>
+</br>
+<ul>
+    {% for Articulo in articulos%}
+        <li><strong>{{Articulo.id}}.</strong>{{Articulo.title}}</li>
+        <p>{{Articulo.content}}<p>
+        </br>
+    {% endfor %}
+ </ul>
+
+ <iframe src="https://streamtape.com/e/9o4YLW8lVps1LK/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+{%endblock%}

@@ -1,0 +1,40 @@
+{%extends 'layout.html'%}
+{%block title%}
+   
+{{title}}
+{{ block.super }}
+{%endblock%}
+
+<!-- esto es un comentario-->
+{% comment "nota para el comentario" %}
+   <h1> </h1>
+{% endcomment %}
+
+{%block content%}
+   {% include 'fecha-actual.html' with saludo="Hola" %}
+   <h1 class=Title>{{title}}</h1>
+   <h2>soy dans</h2>
+   <h2>{{variable}}</h2>
+   {% if nombre and nombre == "Dans Cheese"  %}
+      <p>{{nombre}}</p>
+   {% else %}
+      <p>El nombre no existe o no coincide</P>
+   {% endif %}
+<h3 id="listado">Listado de lenguajes</h3>
+<ul>
+   {% for lenguaje in lenguajes %}
+      <li id="lenguaje">{{lenguaje}}</li>
+   {% endfor %}
+</ul>
+
+<h3>numeros hasta el 2050</h3>
+<ul>
+   {% for year in years%}
+      {% if year|divisibleby:2 == True%}
+       <li>{{year}}</li>
+      {% endif %}
+   {% endfor %}
+</ul>
+{%endblock%}
+
+
